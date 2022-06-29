@@ -2622,7 +2622,7 @@ input, select, textarea {
 .container { position:relative; }
 .container video {
     position:relative;
-    z-index:0;
+	z-index:0;
 }
 
 .overlay {
@@ -2644,7 +2644,7 @@ input, select, textarea {
 }
 
 .video {
-	border-radius: 0.25em;
+	border-radius: 0em;
 	border: 0;
 	display: inline-block;
 	position: relative;

@@ -2617,27 +2617,38 @@ input, select, textarea {
 				width: 100%;
 			}
 
-/* Image */
+/* Video */
 
-	.video {
+.container { position:relative; }
+.container video {
+    position:relative;
+    z-index:0;
+}
+
+.overlay {
+    position:absolute;
+    top:40%;
+	left:0;
+	text-align: center;
+	width: 100%;
+    z-index:1;
+}
+
+.overlay2 {
+    position:absolute;
+    top:85%;
+	left:0;
+	text-align: center;
+	width: 100%;
+    z-index:1;
+}
+
+.video {
 	border-radius: 0.25em;
 	border: 0;
 	display: inline-block;
 	position: relative;
 	}
-	
-	.overlay {
-		min-height: 100vh;
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-align: center;
-			-ms-flex-align: center;
-				align-items: center;
-		-webkit-box-pack: center;
-			-ms-flex-pack: center;
-				justify-content: center;
-	  }
 
 /* List */
 

@@ -3267,7 +3267,7 @@ input, select, textarea {
 			@media screen and (max-width: 736px) {
 
 				.wrapper > .inner {
-					padding: 0em 0em 1em 2em ;
+					padding: 1em 0em 1em 2em ;
 				}
 
 			}
@@ -3561,12 +3561,11 @@ input, select, textarea {
 /* Sidebar */
 
 	#sidebar {
-		padding: 2.5em 2.5em 0.5em 2.5em ;
+		padding: 2.5em 2.5em 0.5em 2.5em;
 		background: #000000;
 		cursor: default;
 		height: 100vh;
 		left: 0;
-		overflow-x: hidden;
 		overflow-y: auto;
 		position: fixed;
 		text-align: right;
@@ -3852,7 +3851,6 @@ input, select, textarea {
 				height: 3.5em;
 				left: 0;
 				line-height: 3.5em;
-				overflow: hidden;
 				padding: 0;
 				text-align: left;
 				top: 0;
@@ -3864,6 +3862,12 @@ input, select, textarea {
 				margin-top: 0px;
 				max-width: 100%;
 				height: 100%;
+			}
+
+			h1 {
+				font-size: 40px;
+				text-align: center;
+				float: left;
 			}
 
 				#sidebar > .inner {
@@ -3916,17 +3920,77 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 736px) {
-
+			
 			#sidebar {
 				display: flex;
 				font-size: 15px;
+				height: 3.5em;
+				left: 0;
+				line-height: 3.5em;
+				padding: 0;
+				text-align: center;
+				top: 0;
+				width: 100%;
 			}
+
 			#logo {
 				display: inline-block;
 				margin-top: 0px;
 				max-width: 100px;
 				height: 100%;
 			}
+			
+			h1 {
+				font-size: 38px;
+				text-align: center;
+			}
+
+			#sidebar > .inner {
+				-moz-flex-direction: row;
+				-webkit-flex-direction: row;
+				-ms-flex-direction: row;
+				flex-direction: row;
+				-moz-align-items: -moz-stretch;
+				-webkit-align-items: -webkit-stretch;
+				-ms-align-items: -ms-stretch;
+				align-items: stretch;
+				height: inherit;
+				line-height: inherit;
+			}
+
+			#sidebar nav {
+				height: inherit;
+				line-height: inherit;
+			}
+
+				#sidebar nav ul {
+					display: -moz-flex;
+					display: -webkit-flex;
+					display: -ms-flex;
+					display: flex;
+					height: inherit;
+					line-height: inherit;
+					margin: 0;
+				}
+
+					#sidebar nav ul li {
+						display: block;
+						height: inherit;
+						line-height: inherit;
+						margin: 0 0 0 1em;
+						padding: 0;
+					}
+
+				#sidebar nav a {
+					height: inherit;
+					line-height: inherit;
+					padding: 0;
+				}
+
+					#sidebar nav a:after {
+						background-image: none;
+						background-color: #84DCF5;
+					}
 
 		}
 

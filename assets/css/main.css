@@ -3998,6 +3998,85 @@ input, select, textarea {
 
 		}
 
+
+		@media screen and (max-width: 550px) {
+			
+			#sidebar {
+				display: flex;
+				font-size: 13px;
+				height: 3.5em;
+				left: 0;
+				line-height: 3.5em;
+				padding: 0px;
+				text-align: center;
+				top: 0;
+				width: 100%;
+			}
+
+			#logo {
+				display: inline-block;
+				margin-top: 0px;
+				width: 100px;
+				height: 45.83px;
+			}
+			
+			h1 {
+				font-size: 0%;
+				text-align: center;
+				margin-top: 5px;
+				visibility: hidden;
+				
+			}
+
+			#sidebar > .inner {
+				-moz-flex-direction: row;
+				-webkit-flex-direction: row;
+				-ms-flex-direction: row;
+				flex-direction: row;
+				-moz-align-items: -moz-stretch;
+				-webkit-align-items: -webkit-stretch;
+				-ms-align-items: -ms-stretch;
+				align-items: stretch;
+				height: inherit;
+				line-height: inherit;
+				overflow: hidden;
+			}
+
+			#sidebar nav {
+				height: inherit;
+				line-height: inherit;
+			}
+
+				#sidebar nav ul {
+					display: -moz-flex;
+					display: -webkit-flex;
+					display: -ms-flex;
+					display: flex;
+					height: inherit;
+					line-height: inherit;
+					margin: 0;
+				}
+
+					#sidebar nav ul li {
+						display: block;
+						height: inherit;
+						line-height: inherit;
+						margin: 0 0 0 1em;
+						padding: 0;
+					}
+
+				#sidebar nav a {
+					height: inherit;
+					line-height: inherit;
+					padding: 0;
+				}
+
+					#sidebar nav a:after {
+						background-image: none;
+						background-color: #84DCF5;
+					}
+
+		}
 /* Intro */
 
 	#intro {
